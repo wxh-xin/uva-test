@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html  class=" js-no-overflow-scrolling">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
+	<title>UVA: in flight</title>
+	<script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);  flex(100, 1);</script>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/uva.css">
+	<script src="js/zepto.min.js"></script>
+	<script src="js/layer/layer.js"></script>
+</head>
+<body>
+	<div class="view-area view-area-vertical mb-20">
+		<div class="view-area-win ">
+			<img src="images/img_shuping.png">
+		</div>
+		<div class="view-area-extraInfo">
+			<span class="item item1"><img src="images/play_icon_shisu.png" > <b>5米/秒</b></span>
+			<span class="item item2"><img src="images/play_icon_dianliang.png" > <b>87%</b></span>
+			<span class="item item3 fr"><img src="images/paly_full.png" > </span>
+		</div>
+	</div>
+	<div class="sec bg-15223 mb-20">
+		<div class="sec-bd">
+			<img class="icon-side" src="images/label_rad.png" >
+			<ul class="list-lr clearfix">
+				<li><span class="col col50">状态</span> <span class="col col50">正在运行</span></li>
+				<li><span class="col col50">高度</span> <span class="col col50">120米</span></li>
+				<li><span class="col col50">经度</span> <span class="col col50">22.98</span></li>
+				<li><span class="col col50">纬度</span> <span class="col col50">37.43</span></li>
+				<li><span class="col col50">CPS卫星数</span> <span class="col col50">12</span></li>
+			</ul>
+		</div>
+	</div>
+	<div class="sec bg-15223 mb-20">
+		<div class="sec-bd">
+			<img class="icon-side" src="images/label_blue.png" >
+			<ul class="list-lr clearfix">
+				<li><span class="col col50">执行计划名称</span> <span class="col col50">绕腾大飞行计划</span></li>
+				<li><span class="col col50">计划时间</span> <span class="col col50">12分32秒</span></li>
+				<li><span class="col col50">已执行时间</span> <span class="col col50">3分56秒</span></li>
+				<li>计划备注信息</li>
+			</ul>
+			<!-- <p>计划备注信息</p> -->
+			<div class="remarks-info">
+				<p class="para">2017-3-2由赵小刀创建</p>
+			</div>
+		</div>
+	</div>
+	<div class="btn-group">
+		<button class="btn btn-block btn-disabled mb-60" type="button"> 执行起飞计划 </button>
+		<button class="btn btn-block btn-primary" type="button"> 执行返航计划 </button>
+	</div>
+</body>
+</html>
